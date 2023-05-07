@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Doomsday Quiz</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div id="header">
+    <div id="logo">
+      <img src="math_logo.jpg" alt="Math Logo">
+    </div>
+    <div id="donate">
+      <button id="donate-button" class="green-button">Donate</button>
+    </div>
+  </div>
+
+  <nav>
+    <label for="min-year">Minimum Year:</label>
+    <input type="number" id="min-year" name="min-year" min="1" max="9999">
+    <label for="max-year">Maximum Year:</label>
+    <input type="number" id="max-year" name="max-year" min="100" max="9999">
+    <button id="apply-year-range" onclick="applyYearRange()">Apply</button>
+  </nav>
+
+  <h1>Doomsday Quiz</h1>
+  <div id="quiz">
+    <div class="question">
+      <p>What day of the week was <span id="date"></span>?</p>
+      <p id="answer"></p>
+    </div>
+    <div class="buttons">
+      <button class="btn-answer" onclick="checkAnswer(this)">Sunday</button>
+      <button class="btn-answer" onclick="checkAnswer(this)">Monday</button>
+      <button class="btn-answer" onclick="checkAnswer(this)">Tuesday</button>
+      <button class="btn-answer" onclick="checkAnswer(this)">Wednesday</button>
+      <button class="btn-answer" onclick="checkAnswer(this)">Thursday</button>
+      <button class="btn-answer" onclick="checkAnswer(this)">Friday</button>
+      <button class="btn-answer" onclick="checkAnswer(this)">Saturday</button>
+    </div>
+    <div class="info">
+      <p>Round <span id="round">0</span>/20</p>
+      <p>Score <span id="score">0</span></p>
+      <button id="new-game" onclick="newGame()">New Game</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
