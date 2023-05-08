@@ -82,7 +82,7 @@ function applyYearRange() {
   var maxYear = parseInt(maxYearInput.value);
 
   // Validate input values
-  if (isNaN(minYear) || isNaN(maxYear) || minYear < 1 || maxYear > 9999 || minYear > maxYear) {
+  if (isNaN(minYear) || isNaN(maxYear) || minYear < 100 || maxYear > 9999 || minYear > maxYear) {
     alert("Please enter a valid year range");
     return;
   }
