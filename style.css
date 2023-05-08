@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -75,12 +77,16 @@ nav {
   display: flex;
   justify-content: center;
   margin-bottom: 3em;
+  align-items: center;
 }
+
+
 
 nav label {
   margin-right: 0.5em;
   display: flex; /* make labels flex containers */
   align-items: center;
+  justify-content: center;
 }
 
 nav input {
@@ -144,3 +150,13 @@ h1 {
 .green-button:hover {
   background-color: #4CAF50; 
 }
+
+
+
+
+
+
+
+
+
+  
